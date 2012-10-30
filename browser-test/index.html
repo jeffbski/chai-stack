@@ -1,0 +1,23 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Mocha Tests</title>
+  <link rel="stylesheet" href="../node_modules/mocha/mocha.css" />
+  <script type="text/javascript">
+    // provide configuration for requirejs
+    var require = {
+      paths: {
+        "chai-stack": '../lib/chai-stack',
+        chai: '../node_modules/chai/chai',
+        mocha: '../node_modules/mocha/mocha'
+      }
+    };
+  </script>
+  <script src="../vendor/requirejs/require.min.js"></script>
+  <script src="main.js"></script>
+</head>
+<body>
+  <div id="mocha"></div>
+  <div id="mocha-result"></div>
+</body>
+</html>

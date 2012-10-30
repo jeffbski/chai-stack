@@ -1,0 +1,10 @@
+({
+  baseUrl: "..",
+  optimize: "none",
+  paths: {
+    chai: "node_modules/chai/chai",
+    "chai-stack": "lib/chai-stack"
+  },
+  name: "chai-stack",
+  out: "dist/chai-stack.js"
+})

@@ -17,7 +17,7 @@ Since the default chai configuration does not include stack traces since they ca
 
 The result is that by requiring chai-stack, I always get the chai returned configured with includeStack true.
 
-## Installation
+## Installation/Usage
 
 ### Server
 
@@ -34,37 +34,20 @@ devDependencies: {
 }
 ```
 
+To use just require it like you would for `chai`, substituting `chai-stack`
+
+```javascript
+var chai = require('chai-stack');
+```
+
+
 ### Browser
 
-Download chai-stack.js and include it with script tag or using AMD
+Download dist/chai-stack.min.js and include it using AMD
 
 ```html
-<script src="chai-stack.js" type="text/javascript"></script>
-<!-- window.chai ready to use, includeStack is true -->
-```
-
-OR if using AMD
-
-```html
-require(['./chai-stack'], function (chai) {
-  // use chai as normal, includeStack already true
+require(['chai-stack'], function (chai) {
+  // chai is loaded and ready to use, includeStack is already true
 });
 ```
 
-## Usage
-
-Just require it like you would for `chai`, substituting `chai-stack`
-
-### CommonJS style
-
-```javascript
-var chai = require('./chai-stack');
-```
-
-### AMD style
-
-```javascript
-require(['./chai-stack'], function (chai) {
-  // use chai as normal, includeStack already true
-});
-```
