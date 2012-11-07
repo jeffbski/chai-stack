@@ -19,18 +19,24 @@ The result is that by requiring chai-stack, I always get the chai returned confi
 
 ## Installation/Usage
 
+You can just require chai-stack and it will use the latest version of chai, but to have more fine grained control over what version of chai you are using and to make it more visible, it is recommended that you install chai first and then chai-stack.
+
 ### Server
 
 ```bash
-npm install chai-stack
+npm install chai  # by doing this you can control the version of chai directly
+npm install chai-stack  # now it will just use the chai that is there already
 ```
 
-and add it to your package.json devDependencies using a `*` as the version tag so you get the latest version when you install.
+and add it to your package.json devDependencies using a `*` as the version tag so you get the latest version when you install. Or for more fine grained control, specify a version you want to use.
+
+Note: you need to remove the `// comments` from the lines below to be valid json
 
 ```json
 devDependencies: {
-  "chai": "*",
-  "mocha": "*" // our preference, but you can use any test runner you like
+  "chai": "*",        // or for more fine grained control, specify
+  "chai-stack": "*",  // it will use whatever version of chai is already installed
+  "mocha": "*"        // or for more fine grained control, specify
 }
 ```
 
