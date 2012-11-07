@@ -1,6 +1,6 @@
 # chai-stack
 
-Light wrapper around chaijs which automatically sets chai.Assertion.includeStack = true
+Light wrapper around chaijs which automatically sets chai.Assertion.includeStack = true;
 
 [![Build Status](https://secure.travis-ci.org/jeffbski/chai-stack.png?branch=master)](http://travis-ci.org/jeffbski/chai-stack)
 
