@@ -49,9 +49,16 @@ var chai = require('chai-stack');
 
 ### Browser
 
-Download dist/chai-stack.min.js and include it using AMD
+Download version of chai you want to use and lib/chai-stack.js and include it using AMD
 
 ```html
+require.config({
+  paths: {
+    chai: 'http://chaijs.com/chai', // or could specify a specific version or local path
+    "chai-stack": '../lib/chai-stack',
+    mocha: '../node_modules/mocha/mocha'
+  }
+});
 require(['chai-stack'], function (chai) {
   // chai is loaded and ready to use, includeStack is already true
 });

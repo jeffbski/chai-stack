@@ -1,5 +1,11 @@
 /*global require:false */
-
+require.config({
+  paths: {
+    chai: 'http://chaijs.com/chai', // or could specify a specific version or local path
+    "chai-stack": '../lib/chai-stack',
+    mocha: '../node_modules/mocha/mocha'
+  }
+});
 require(["mocha"], function () {
   'use strict';
   window.mocha.setup({
