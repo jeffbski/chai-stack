@@ -2,6 +2,8 @@
 
 Light wrapper around chaijs which automatically sets chai.Assertion.includeStack = true
 
+[![Build Status](https://secure.travis-ci.org/jeffbski/chai-stack.png?branch=master)](http://travis-ci.org/jeffbski/chai-stack)
+
 ## Reason for this module
 
 By default, Chai does not show stack traces upon an AssertionError. This can be changed by modifying the includeStack parameter for chai.Assertion. (See http://chaijs.com/guide/styles/#configure-section)
