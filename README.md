@@ -35,7 +35,7 @@ and add it to your package.json devDependencies using a `*` as the version tag s
 Note: you need to remove the `// comments` from the lines below to be valid json
 
 ```json
-devDependencies: {
+"devDependencies": {
   "chai": "*",        // or for more fine grained control, specify
   "chai-stack": "*",  // it will use whatever version of chai is already installed
   "mocha": "*"        // or for more fine grained control, specify
