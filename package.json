@@ -1,7 +1,7 @@
 {
   "name": "chai-stack",
   "description": "Light wrapper around chaijs which automatically sets chai.Assertion.includeStack = true",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "author": "Jeff Barczewski <jeff.barczewski@gmail.com>",
   "repository": { "type": "git", "url": "http://github.com/jeffbski/chai-stack.git" },
   "bugs" : { "url": "http://github.com/jeffbski/chai-stack/issues" },
@@ -14,9 +14,7 @@
   },
   "devDependencies": {
     "requirejs": "~2.1.1",
-    "almond": "~0.2.0",
-    "mocha": "~1.4.2",
-    "jake": "~0.5.5"
+    "mocha": "~1.4.2"
   },
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha ./test/*.mocha.js"
